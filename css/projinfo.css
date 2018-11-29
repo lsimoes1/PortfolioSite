@@ -32,3 +32,6 @@ body{
   color: gray;
   font-size: 13px;
 }
+.materialboxed{
+  width: 100%;
+}
