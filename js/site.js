@@ -4,21 +4,7 @@ $(document).ready(() => {
     $('.modal').modal();
     $('.tooltipped').tooltip();
     $('.fixed-action-btn').floatingActionButton();
-
-    $(".border-body-effect").addClass("animated fadeIn");
-    // $(".cssload").show();
-
-    // setTimeout(() => {
-    //   $(".cssload").fadeOut(600).hide;
-    //   $(".effect-animate").addClass("animated zoomIn");
-    //   $(".effect-animate").show();
-    //
-    //   setTimeout(() => {
-    //     $("footer").addClass("animated slideInUp");
-    //     $("footer").show();
-    //   }, 650)
-    //
-    // }, 2000)
+    
     $(".animsition").animsition({
       inClass: 'fade-in',
       outClass: 'fade-out',
