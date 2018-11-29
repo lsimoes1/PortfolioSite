@@ -1,0 +1,34 @@
+body{
+  background-color: #282c34;
+  background-size: 100%;
+}
+.box-principal{
+  background-color: white;
+  padding: 2em;
+  border-radius: 13px;
+  box-shadow: 10px 10px 8px black;
+}
+.titulo{
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 5px 5px 10px black;
+  color: white;
+  padding: 1em;
+}
+.resumo{
+  text-align: center;
+  color: white;
+    text-shadow: 5px 5px 10px black;
+}
+.card-panel{
+ text-align: center;
+ border-radius: 10px!important;
+ box-shadow: 2px 2px 5px black!important;
+}
+.materialboxed{
+  border-radius: 10px;
+}
+.descricao{
+  color: gray;
+  font-size: 13px;
+}
