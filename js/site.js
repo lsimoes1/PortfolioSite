@@ -4,7 +4,11 @@ $(document).ready(() => {
     $('.modal').modal();
     $('.tooltipped').tooltip();
     $('.fixed-action-btn').floatingActionButton();
+<<<<<<< HEAD
+
+=======
     
+>>>>>>> PaginaServiceDesk
     $(".animsition").animsition({
       inClass: 'fade-in',
       outClass: 'fade-out',
