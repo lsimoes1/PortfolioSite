@@ -1,0 +1,47 @@
+body{
+  /* background-color: #282c34;
+  background-size: 100%; */
+  background: url("../img/1920x1280.jpg") center center no-repeat fixed;
+  background-size: 100%;
+}
+.box-principal{
+  background-color: white;
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 13px;
+  box-shadow: 10px 10px 8px black;
+}
+.titulo{
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 5px 5px 10px black;
+  color: white;
+  padding: 1em;
+}
+.resumo{
+  text-align: center;
+  color: white;
+    text-shadow: 5px 5px 10px black;
+}
+.card-panel{
+ text-align: center;
+ border-radius: 10px!important;
+ box-shadow: 2px 2px 5px black!important;
+}
+.materialboxed{
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px gray;
+}
+.descricao-fig-top, .descricao-fig-bottom{
+  color: gray;
+  font-size: 13px;
+}
+.descricao-fig-top{
+  margin-bottom: 1em;
+}
+.descricao-fig-bottom{
+  margin-top: 1em;
+}
+.materialboxed{
+  width: 100%;
+}
