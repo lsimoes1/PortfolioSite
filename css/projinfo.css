@@ -45,3 +45,12 @@ body{
 .materialboxed{
   width: 100%;
 }
+.div-less{
+  display: none;
+}
+.txt-more::before{
+  content: "ver mais";
+}
+.txt-less::after{
+  content: "ver menos";
+}
