@@ -1,7 +1,20 @@
-body{
+html {
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  width: 1em;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.back{
   /* background-color: #282c34;
   background-size: 100%; */
-  background: url("../img/1920x1280.jpg") center center no-repeat fixed;
+  background: url("../resource/img/1920x1280.jpg") center no-repeat fixed;
   background-size: 100%;
 }
 .box-principal{
@@ -49,8 +62,8 @@ body{
   display: none;
 }
 .txt-more::before{
-  content: "ver mais";
+  content: "...ver mais";
 }
 .txt-less::after{
-  content: "ver menos";
+  content: "ocultar";
 }

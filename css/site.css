@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.1);
 }
 .back {
-  background: url("../img/1920x1280.jpg") center center no-repeat fixed;
+  background: url("../resource/img/1920x1280.jpg") center center no-repeat fixed;
   background-size: 100%;
 }
 .collapsible-header + .collapsible-body {
@@ -102,7 +102,7 @@ footer {
     transform: unset;
   }
   .back {
-    background: url("../img/1920x1280.jpg") top center no-repeat fixed;
+    background: url("../resource/img/1920x1280.jpg") top center no-repeat fixed;
   }
   .name-tittle {
     margin-left: 2%;

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Projeto ServiceDesk</title>
 
   <!-- Referências CSS -->
@@ -13,7 +14,7 @@
 
 </head>
 
-<body>
+<body class="back">
   <div class="animsition">
 
     <div class="titulo">
@@ -46,9 +47,9 @@
         <div class="row">
 
           <!-- Página Login -->
-          <div class="col s6 m3">
+          <div class="col s12 m3">
 
-            <img class="materialboxed" data-caption="Tele incial - Login" src="./img/ServiceDeskHome.PNG">
+            <img class="materialboxed" data-caption="Tele incial - Login" src="./resource/imgServiceDesk/ServiceDeskHome.PNG">
             <figcaption class="descricao-fig-bottom">
               Página incial de Login. <br>
               Nessa página, a rotina consulta o banco para localizar o login.
@@ -56,8 +57,8 @@
           </div>
 
           <!-- Página Home -->
-          <div class="col s6 m6">
-            <img class="materialboxed" data-caption="Tela home - Informações de Chamados" src="./img/servicedesk-web-home.png">
+          <div class="col s12 m6">
+            <img class="materialboxed" data-caption="Tela home - Informações de Chamados" src="./resource/imgServiceDesk/servicedesk-web-home.PNG">
             <div class="descricao-fig-bottom">
               <div class="div-more">
                 Página home. <br>
@@ -74,19 +75,40 @@
             </div>
           </div>
 
-          <div class="col s6 m3">
-            <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="./img/code.jpg">
-            <figcaption class="descricao-fig-top">
-              teste de imagem blbalalblablablablablalbalblablablalb lablablalbauhuhsuahsuhas
-            </figcaption>
+          <!-- Tela de abertura de chamado -->
+          <div class="col s12 m3">
+            <img class="materialboxed" data-caption="Página de abertura de chamados." src="./resource/imgServiceDesk/Web-TelaNovoChamado.PNG">
+            <div class="descricao-fig-bottom">
+              <div class="div-more">
+                Aqui temos a tela de abertura de chamados.
+                <a class="txt-more"></a>
+                <div class="div-less">
+
+                    Utilizamos um modal pela facilidade e praticidade, também deixa o site dinâminco e elegante.
+                    Aqui não tem segredo, basta apenas preencher o formulário e por trás chamaremos a classe de regra de negócio,
+                    que então gravará os dados no banco. <br>
+                    Após a abertura do chamado, o modal é fechado e na tela inicial o grid é atualizado informando o novo chamado.
+
+                 <a class="txt-less"></a>
+               </div>
+             </div>
+            </div>
           </div>
         </div>
 
         <div class="row">
           <div class="col s12 m4">
-            <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="./img/code.jpg">
-            <div class=" descricao">
-              teste de imagem blbalalblablablablablalbalblablablalb lablablalbauhuhsuahsuhas
+            <img class="materialboxed" data-caption="Tela para consulta de usuário" width="250" src="./resource/imgServiceDesk/Web-TelaAlteraCadastroConsulta.PNG">
+            <div class="descricao-fig-bottom">
+              <div class="div-more">
+                A tela de consulta de usuário foi algo um pouco mais
+                <a class="txt-more"></a>
+                <div class="div-less">
+                  complicado. Aqui utilizamos um UpdatePanel, pois no mesmo modal temos duas Divs onde a segunda é escondida.
+                  Quando localizamos o usuário na base, a primeira Div é escondida e a segunda aparece na tela com os dados do usuário.
+                  <a class="txt-less"></a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -97,19 +119,33 @@
                   <h5>Observação</h5>
                 </p>
                 <p>
-                  Algumas informações sobre a estrutura.
+                  Esse projeto foi desenvolvido em camadas. Temas a camada de interface, a camada Business que contémailto
+                  a regra de negócio, a camada DAO para o CRUD, e a camada MODEL onde utilizo apenas para salvar os dados do usuário.
+                  No mesmo projeto, temos a primeira parte dele onde foi desenvolvido a interface desktop. Pode saber mais sobre
+                  o projeto <a href="#">clicando aqui</a>.
                 </p>
               </span>
             </div>
           </div>
 
           <div class="col s12 m4">
-            <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="./img/code.jpg">
-            <div class=" descricao">
-              teste de imagem blbalalblablablablablalbalblablablalb lablablalbauhuhsuahsuhas
+            <img class="materialboxed" data-caption="Tela com os dados do usuário" width="250" src="./resource/imgServiceDesk/Web-TelaAlteraCadastro.PNG">
+            <div class="descricao-fig-bottom">
+              <div class="div-more">
+                Após a consulta do usuário, com o UpdatePanel
+                escondendo uma tela e mostrando a outra, fazemos isso de forma dinâmica, deixando a tela mais leve para o usuário.
+                Essa tela já nos retorna os dados do usuário caso ele exista na base,
             </div>
           </div>
-
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m3">
+          <img class="materialboxed" data-caption="Tela de cadastro" width="250" src="./resource/imgServiceDesk/Web-TelaCadastraUsuario.PNG">
+          <div class="descricao-fig-bottom">
+            Tela de cadastro de usuário. Preenchendo o formulário, a rotina chama a camada de regra de negócios
+            seguido pela camada de de banco
+          </div>
         </div>
       </div>
     </div>
