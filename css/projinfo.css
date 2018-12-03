@@ -67,3 +67,8 @@ body::-webkit-scrollbar-thumb {
 .txt-less::after{
   content: "ocultar";
 }
+@media only screen and (max-width: 768px) {
+  .back {
+    background: url("../resource/img/1920x1280.jpg") top center no-repeat fixed;
+  }
+}
