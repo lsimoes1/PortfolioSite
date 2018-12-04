@@ -65,6 +65,9 @@ body::-webkit-scrollbar-thumb {
 .txt-more::before{
   content: "...ver mais";
 }
+.txt-more:hover::before, .txt-less:hover::after{
+  cursor: pointer;
+}
 .txt-less::after{
   content: "ocultar";
 }
