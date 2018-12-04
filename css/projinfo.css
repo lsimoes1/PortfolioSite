@@ -27,9 +27,10 @@ body::-webkit-scrollbar-thumb {
 .titulo{
   text-align: center;
   font-size: 50px;
-  text-shadow: 5px 5px 10px black;
+  text-shadow: 1px 1px 30px black;
   color: white;
-  padding: 1em;
+  margin-bottom: 1em;
+  margin-top: 1.5em;
 }
 .resumo{
   text-align: center;
@@ -66,4 +67,47 @@ body::-webkit-scrollbar-thumb {
 }
 .txt-less::after{
   content: "ocultar";
+}
+header{
+  background-color: rgba(0, 0, 0, 0.6);
+  color: gray;
+  position: fixed;
+  box-sizing: border-box;
+  clear: both;
+  width: 100%;
+  z-index: 1;
+}
+.iconback{
+  opacity: 10;
+  transition: 0.4s;
+  margin-top: 0.1em;
+
+}
+.iconback:hover{
+  transform: scale(1.3);
+  cursor: pointer;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #F2FFFC;
+  padding: 1em;
+  clear: both;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#title2{
+  text-align: center;
+  opacity: 1.0;
+  display: none;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+@media only screen and (max-width: 768px) {
+  .back {
+    background: url("../resource/img/1920x1280.jpg") top center no-repeat fixed;
+  }
 }

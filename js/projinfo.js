@@ -1,5 +1,6 @@
 $(document).ready(() => {
   $('.materialboxed').materialbox();
+  $('.tooltipped').tooltip();
 
   $(".animsition").animsition({
     inClass: 'zoom-in',
@@ -28,10 +29,18 @@ $(document).ready(() => {
     $(this).next(".div-less").slideDown();
     $(this).css('display', 'none');
   });
-
   $('.txt-less').click(function(){
     $(".div-less").slideUp();
     $(this).closest(".div-more").find(".txt-more").css('display', '');
   });
+});
 
+$(window).scroll(function(){
+  var position = $(this).scrollTop();
+  if (position >= 130) {
+    $("#title2").slideDown();
+  }
+  else {
+    $("#title2").slideUp();
+  }
 });
