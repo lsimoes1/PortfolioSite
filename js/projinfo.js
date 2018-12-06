@@ -34,13 +34,3 @@ $(document).ready(() => {
     $(this).closest(".div-more").find(".txt-more").css('display', '');
   });
 });
-
-$(window).scroll(function(){
-  var position = $(this).scrollTop();
-  if (position >= 130) {
-    $("#title2").slideDown();
-  }
-  else {
-    $("#title2").slideUp();
-  }
-});

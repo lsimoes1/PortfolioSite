@@ -1,5 +1,6 @@
 html {
   overflow-y: scroll;
+  background-color: #e5e1e2;
 }
 body::-webkit-scrollbar {
   width: 1em;
@@ -12,17 +13,12 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
 }
 .back{
-  /* background-color: #282c34;
-  background-size: 100%; */
-  background: url("../resource/img/1920x1280.jpg") center no-repeat fixed;
-  background-size: 100%;
-}
-.box-principal{
-  background-color: white;
-  margin-bottom: 2em;
-  padding: 2em;
-  border-radius: 13px;
-  box-shadow: 10px 10px 8px black;
+  background: url("../resource/img/1920x1280.jpg") center center no-repeat fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65%;
 }
 .titulo{
   text-align: center;
@@ -31,6 +27,38 @@ body::-webkit-scrollbar-thumb {
   color: white;
   margin-bottom: 1em;
   margin-top: 1.5em;
+}
+.iconback{
+  color: white;
+}
+.imgtitle{
+  background-color: white;
+  color: #334051;
+  text-align: center;
+  position:absolute;
+  top: -8%;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 70px;
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  z-index: 2;
+  box-shadow: 1px 1px 10px rgba(0,0,0, 0.4);
+}
+
+.btnvoltar{
+  position: absolute;
+  margin: .7em;
+}
+.box-principal{
+  background-color: white;
+  margin-top: 9em;
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 3px;
+  box-shadow: 1px 1px 8px rgba(0,0,0, 0.4);
+  z-index: 1;
 }
 .resumo{
   text-align: center;
@@ -71,14 +99,9 @@ body::-webkit-scrollbar-thumb {
 .txt-less::after{
   content: "ocultar";
 }
-header{
-  background-color: rgba(0, 0, 0, 0.6);
-  color: gray;
-  position: fixed;
-  box-sizing: border-box;
-  clear: both;
-  width: 100%;
-  z-index: 1;
+.headerefeito{
+  background-color: white;
+  transition: 0.8s;
 }
 .iconback{
   opacity: 10;
@@ -106,7 +129,7 @@ footer {
   text-align: center;
   opacity: 1.0;
   display: none;
-  color: white;
+  color: #4286f4;
   text-shadow: 5px 5px 10px black;
 }
 @media only screen and (max-width: 768px) {
