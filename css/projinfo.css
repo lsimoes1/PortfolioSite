@@ -40,11 +40,16 @@ body::-webkit-scrollbar-thumb {
   left: 50%;
   transform: translate(-50%,0);
   font-size: 70px;
-  width: 130px;
-  height: 130px;
-  border-radius: 100px;
+  width: 140px;
+  height: 140px;
+  border-radius: 100px 100px 100px 100px;
   z-index: 2;
   box-shadow: 1px 1px 10px rgba(0,0,0, 0.4);
+}
+.imgtitle > i{
+  position: relative;
+  top: 10%;
+  left: 1%;
 }
 
 .btnvoltar{
@@ -67,12 +72,10 @@ body::-webkit-scrollbar-thumb {
 }
 .card-panel{
  text-align: center;
- border-radius: 10px!important;
- box-shadow: 2px 2px 5px black!important;
+ box-shadow: 1px 1px 8px rgba(0,0,0, 0.5)!important;
 }
 .materialboxed{
-  border-radius: 10px;
-  box-shadow: 2px 2px 3px gray;
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
 }
 .descricao-fig-top, .descricao-fig-bottom{
   color: gray;
